@@ -11,3 +11,25 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.text-wrapper-2 {
+    color: #000;
+    font-family: Inter;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: normal;
+}
+.text-wrapper-3 {
+    color: #000;
+    font-family: Inter;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: normal;
+}
+.text-wrapper-4 {
+    color: #000;
+    font-family: Inter;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: normal;
+}
