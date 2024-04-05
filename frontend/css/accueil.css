@@ -14,7 +14,7 @@ html{
 body {
     font-family: Inter;
     font-weight: 500;
-    
+    overflow-x: hidden;
 
 }
 
@@ -29,6 +29,13 @@ body {
     height: 6rem;
     flex-shrink: 0;
     border-radius: 1rem;
+}
+.overlap-2{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;;
 }
 
 .text-wrapper {
@@ -115,39 +122,95 @@ font-size: 1.3rem;
     font-family: inter;
     src: url(polices/Inter-Regular.ttf);
 }
-.discover-container{
-    display: inline-flex;
-    padding: 0.4rem 1.9rem;
+
+.button-container {
+    display: flex;
+}
+
+.discover-container,
+.contact-container {
+    display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.7rem;
     border-radius: 0.5rem;
-    background: #FFDF5B;
+    margin-top: 4.5rem;
+}
+.discover-container {
+    padding: 0.4rem 1.9rem;
+    background: #ffdf5b;
+    margin-right: 0.7rem; 
 }
 
-.text-wrapper-4{
+.contact-container {
+    padding: 0.3rem 1.2rem;
+    border: 0.5px solid #000;
+    background: rgba(51, 169, 255, 0.00);
+}
+
+.text-wrapper-4 {
     color: #000;
     font-family: Inter;
     font-size: 1.3rem;
     font-weight: 500;
 }
 
-.contact-container{
-    display: inline-flex;
-    padding: 0.4rem 1.9rem;
-    justify-content: center;
-    align-items: center;
-    gap: 0.7rem;
-    border-radius: 0.4rem;
-    border: 0.5px solid #000;
-    background: rgba(51, 169, 255, 0.00);
+.text-wrapper-40 {
+    color: #000;
+    font-size: 1.25rem;
 }
 
-.photo{
-    width: 31rem;
-    height: 15rem;
+
+.photo-container{
+    width: 60%;
     flex-shrink: 0;
     border-radius: 0.6rem;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.photo-container img{
+    width: 100%;
+}
+
+.rectangle-7{
+    width: 80%;
+    height: 12.5rem;
+    margin-top: 4.5rem;
+    flex-shrink: 0;
+    border-radius: 0.625rem;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.composant-container{
+    justify-content: center;
+
+}
+.frame-9{
+    display: flex;
+    width: 44rem;
+    height: 6rem;
+    align-items: flex-end;
+    gap: 6rem;
+    flex-shrink: 0;
+    align-items: center;
+
+}
+
+.text-wrapper-42{
+    margin-top: 9rem;
+    color: #79D557;
+    font-size: 3rem;
+    font-weight: 700;
+    justify-content: space-evenly;
+}
+
+.text-wrapper-41{
+    color: rgba(0, 0, 0, 0.80);
+    font-size: 2.25rem;
+    font-weight: 500;
 }
 
 
