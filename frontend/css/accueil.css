@@ -1,35 +1,155 @@
-.navbar_container{
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+html{
+    font-size: 1rem; 
+}
+
+body {
+    font-family: Inter;
+    font-weight: 500;
+    
+
+}
+
+.navbar_container {
     display: flex;
     align-items: center;
-    padding: 1rem 3rem;
-    background-color: brown;
+    justify-content: space-between;
+    padding: 1rem;
+}
 
+.logo {
+    height: 6rem;
+    flex-shrink: 0;
+    border-radius: 1rem;
+}
+
+.text-wrapper {
+    color: #000;
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 .navbar {
+    list-style-type: none;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    gap: 1rem;
 }
 
-.text-wrapper-2 {
-    color: #000;
+.text-wrapper-2{
+    color: #79D557;
     font-family: Inter;
-    font-size: 1.2rem;
-    font-weight: 600;
-    line-height: normal;
+    font-size: 1.3rem;
 }
-.text-wrapper-3 {
+
+.text-wrapper-3{
     color: #000;
-    font-family: Inter;
-    font-size: 1.2rem;
-    font-weight: 600;
-    line-height: normal;
+font-family: Inter;
+font-size: 1.3rem;
 }
-.text-wrapper-4 {
+
+.text-wrapper-4{
     color: #000;
     font-family: Inter;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+}
+
+.div-wrapper{
+    display: flex;
+    width: 8rem;
+    padding: 0.1rem 0.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    flex-shrink: 0;
+    border-radius: 0.6rem;
+    background: #FFDF5B;
+}
+.frame-5{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.frame-4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+    
+}
+
+.text-wrapper-38{
+    font-family: Inter;
+    font-size: 3.5rem;
     font-weight: 600;
-    line-height: normal;
+}
+
+.text-wrapper-39{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+.frame-wrapper{
+    display: inline-flex;
+    height: 5rem;
+    padding: 1.2rem 2rem;
+    align-items: center;
+    gap: 1;
+    flex-shrink: 0;
+    border-radius: 6rem;
+    background: #79D557;
+}
+@font-face {
+    font-family: inter;
+    src: url(polices/Inter-Regular.ttf);
+}
+.discover-container{
+    display: inline-flex;
+    padding: 0.4rem 1.9rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+    border-radius: 0.5rem;
+    background: #FFDF5B;
+}
+
+.text-wrapper-4{
+    color: #000;
+    font-family: Inter;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.contact-container{
+    display: inline-flex;
+    padding: 0.4rem 1.9rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+    border-radius: 0.4rem;
+    border: 0.5px solid #000;
+    background: rgba(51, 169, 255, 0.00);
+}
+
+.photo{
+    width: 31rem;
+    height: 15rem;
+    flex-shrink: 0;
+    border-radius: 0.6rem;
+}
+
+
+@media screen and (max-width: 768px) {
 }
