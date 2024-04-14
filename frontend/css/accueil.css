@@ -215,7 +215,7 @@ body {
     align-items: center;
     font-size: 3rem;
     font-weight: 800;
-    padding: 4rem;
+    padding: 2rem;
     gap: 1rem;
 }
 
@@ -225,4 +225,75 @@ body {
     border-radius: 6.25rem;
     background: #79d557;
     color: #fff;
+}
+
+.swiper-container {
+    width: 60rem;
+    margin: auto;
+}
+
+.swiper {
+    border-radius: 0.625rem;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.social-media-account-container {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    gap: 1rem;
+    align-items: right;
+    justify-content: center;
+    width: fit-content;
+}
+
+.social-media-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.social-media-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    background: #fff;
+    border-radius: 100%;
+    border: 1px solid #000;
+}
+
+.social-media-content img {
+    height: 7.5rem;
+    width: 7.5rem;
+    padding: 1rem;
+}
+
+#product {
+    position: relative;
+}
+
+.background-product {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
