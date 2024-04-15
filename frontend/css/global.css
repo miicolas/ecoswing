@@ -4,12 +4,11 @@
     box-sizing: border-box;
 }
 
-.btn-primary
-{
+.btn-primary {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1.5rem 2rem;
-    background-color: #FFDF5B;
+    padding: 0.5rem 1rem;
+    background-color: #ffdf5b;
     border-radius: 0.625rem;
 }

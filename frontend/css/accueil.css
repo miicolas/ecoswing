@@ -51,6 +51,7 @@ body {
     display: flex;
     gap: 2rem;
     height: max-content;
+    align-items: center;
 }
 
 .text-wrapper-2 {
@@ -175,8 +176,9 @@ body {
 }
 
 .data-container {
-    margin-top: 3rem;
-    witdht: 60rem;
+    width: fit-content;
+    margin: 3rem auto;
+    padding: 5rem 2rem;
     height: 12rem;
     border-radius: 0.625rem;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -296,4 +298,11 @@ body {
     top: 0;
     left: 0;
     z-index: -1;
+}
+
+.description-product-container {
+    border-radius: 0.625rem;
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(2px);
 }
