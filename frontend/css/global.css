@@ -56,11 +56,14 @@ footer {
 }
 
 .list-content {
-    gap: 0.5rem;
+    gap: 1rem;
     padding: 0.5rem;
     font-size: 1.2rem;
     font-weight: 300;
     color: #fff;
+}
+.list-content li {
+    margin-bottom: 1rem; /* Ajoutez la marge souhaitée entre chaque élément "Crew" */
 }
 
 .navbar_container {
