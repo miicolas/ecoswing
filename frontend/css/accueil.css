@@ -548,5 +548,6 @@ body {
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
-  margin-right: 80rem;
+  margin-right: 1rem;
+  justify-content: flex-start;
 }
