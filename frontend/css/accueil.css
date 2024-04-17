@@ -257,6 +257,15 @@ body {
   object-fit: cover;
 }
 
+#social-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
 .social-media-account-container {
   display: flex;
   flex-direction: column;
@@ -292,6 +301,7 @@ body {
 
 #product {
   position: relative;
+  margin-top: 15%;
 }
 
 .background-product {
