@@ -12,3 +12,42 @@
     background-color: #ffdf5b;
     border-radius: 0.625rem;
 }
+
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #000;
+    color: #fff;
+    padding: 5rem;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    
+    
+}
+
+.footer-container li {
+    list-style: none;
+}
+
+.footer-title-list {
+    font-size: 1.5rem;
+    font-weight: 600;
+    gap: 1rem;
+    color: gray;
+}
+
+.list-content {
+    gap: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #fff;
+}
