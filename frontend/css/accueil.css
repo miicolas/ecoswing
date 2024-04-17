@@ -522,3 +522,31 @@ body {
   top: 7rem;
   left: 11rem;
 }
+
+.footer-title {
+  display: flex;
+  width: 4rem;
+  height: 1.3rem;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.footer-title {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 1.625rem;
+}
+
+.credits img {
+  width: 5rem;
+  height: 4rem;
+  flex-shrink: 0;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  margin-right: 80rem;
+}
