@@ -1,0 +1,105 @@
+main {
+    z-index: 1;
+}
+.project-presentation-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    height: max-content ;
+
+
+}
+.project-presentation-container ul{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+}
+
+.project-presentation-container ul li {
+    list-style: none;
+    padding: 1rem;
+}
+
+.project-part-content {
+    height: 40rem;
+    width: 25rem;
+    border-radius: 0.625rem;
+}
+
+.project-part-content img {
+   height: auto;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.625rem;
+}
+
+.project-description {
+    padding: 1rem;
+}
+
+.project-description h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.project-description p {
+    font-size: 1rem;
+    color: gray;
+}
+
+.project-video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    width: 100%;
+    height: max-content;
+
+}
+
+
+.project-cta {
+    margin: auto;
+    padding: 2rem;
+    width: 50rem;
+
+}
+
+
+
+.project-cta-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    text-align: center;
+
+}
+
+.project-cta-content h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.project-cta-content p {
+    font-size: 1.2rem;
+    color: gray;
+}
+
+.title-green {
+    display: inline-flex;
+    padding: 1rem 2rem;
+    border-radius: 6.25rem;
+    background: #79d557;
+    color: #fff;
+}
