@@ -6,6 +6,7 @@
 
 html {
     font-size: 1rem;
+    font-family: Inter;
 }
 
 body {
@@ -131,3 +132,9 @@ footer {
     border-radius: 0.6rem;
     background: #ffdf5b;
 }
+
+.navbar a {
+    text-decoration: none;
+    color: #000;
+}
+
