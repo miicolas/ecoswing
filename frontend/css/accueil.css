@@ -415,7 +415,7 @@ body {
 
 .logo-description img {
   height: 5rem;
-  width: 5rem;
+  width: auto;
 }
 
 .title-description-product {
@@ -437,23 +437,26 @@ body {
   align-items: flex-start;
   width: 35rem;
   height: 22rem;
-  flex-shrink: 0;
   position: absolute;
   bottom: 0;
   left: 0;
 }
 
 .section-title h1 {
-  display: flex;
-  margin-top: 30rem;
-  margin-bottom: 20rem;
+  display: flex; 
   justify-content: center;
   color: #000;
   font-family: Inter;
   font-size: 4rem;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 800;
   line-height: normal;
+  padding: 2rem;
+}
+
+#sponsors {
+
+  padding: 2rem;
 }
 
 .rectangle1 {
@@ -462,28 +465,27 @@ body {
   width: 16rem;
   height: 13rem;
   background: rgba(255, 223, 91, 0.34);
-  flex-shrink: 0;
+
 }
 
 .rectangle2 {
   width: 16rem;
   height: 13rem;
   background: rgba(255, 223, 91, 0.34);
-  flex-shrink: 0;
 }
 
 .rectangle3 {
   width: 16rem;
   height: 13rem;
   background: rgba(255, 223, 91, 0.34);
-  flex-shrink: 0;
+
 }
 
 .rectangles {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-bottom: 170px;
+
 }
 .rectangle2 img,
 .rectangle3 img {
@@ -523,31 +525,4 @@ body {
   left: 11rem;
 }
 
-.footer-title {
-  display: flex;
-  width: 4rem;
-  height: 1.3rem;
-  flex-direction: column;
-  justify-content: center;
-  flex-shrink: 0;
-}
-.footer-title {
-  color: rgba(255, 255, 255, 0.7);
-  font-family: Inter;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 200;
-  line-height: 1.625rem;
-}
 
-.credits img {
-  width: 5rem;
-  height: 4rem;
-  flex-shrink: 0;
-  border-radius: 1rem;
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
-  display: flex;
-  align-items: center;
-  margin-right: 1rem;
-  justify-content: flex-start;
-}
