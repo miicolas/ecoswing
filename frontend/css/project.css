@@ -115,3 +115,17 @@ main {
   padding: 0.5rem 1rem;
   width: 100%;
 }
+.Aurelien img,
+.Vivi img,
+.Nicod img,
+.NicoB img,
+.Deb img,
+.Max img,
+.Ethan img,
+.Stacy img,
+.Ary img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
