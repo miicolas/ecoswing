@@ -1,21 +1,27 @@
-import express from 'express';
-import ip from 'ip';
-import bodyParser from 'body-parser';
-import cors from 'cors';
-import router from './router.js';
+import express from "express";
+import ip from "ip";
+import cors from "cors";
+import router from "./router.js";
+import path from "path";
+import { fileURLToPath } from "url";
+import cookieParser from "cookie-parser";
 
+const __filename = fileURLToPath(import.meta.url); // Equivalent to __filename in Node.js
+const __dirname = path.dirname(__filename); // Equivalent to __dirname in Node.js
 
 const app = express();
 const ipAddr = ip.address();
 const port = 3000;
 
 app.use(cors());
-app.use(bodyParser.json()); // Permet de parser le body des requêtes POST
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(cookieParser());
+app.use(express.urlencoded({ extended: true }));
+
+app.use(express.static(path.join(__dirname, "../frontend")));
+
 app.use(router);
 
-app.listen(3000, () => {
-    console.log(`Serveur : http://${ipAddr}:${port}`);
-    }
-);
-
+app.listen(port, () => {
+  console.log(`Serveur : http://${ipAddr}:${port}`);
+});
