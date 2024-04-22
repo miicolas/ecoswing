@@ -2,7 +2,7 @@ import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 
 const getProfile = async (req, res) => {
-  const userId = req.user;
+  const userId = req.user.id;
 
   try {
     const userProfile = await prisma.user.findFirst({
@@ -10,6 +10,7 @@ const getProfile = async (req, res) => {
         id: userId,
       },
       select: {
+        id: true,
         name: true,
         email: true,
         gift: true,
@@ -18,7 +19,14 @@ const getProfile = async (req, res) => {
     });
     console.log(userProfile);
 
-    res.status(200).json(userProfile);
+    res.status(200).json(
+      {
+        name: userProfile.name,
+        email: userProfile.email,
+        gift: userProfile.gift,
+        lastGift: userProfile.lastGift,
+      },
+    );
   } catch (error) {
     console.error("Error getting profile:", error);
   }

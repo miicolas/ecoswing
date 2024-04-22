@@ -5,7 +5,7 @@ const authenticateToken = async (req, res, next) => {
   const token = req.cookies.AuthToken; // Récupération du token depuis les cookies
 
   if (!token) {
-    return res.redirect("/index.html"); // Redirection vers la page de connexion si le token est manquant
+    return res.redirect("/login.html"); // Redirection vers la page de connexion si le token est manquant
   }
 
   // Vérification du token
@@ -13,9 +13,11 @@ const authenticateToken = async (req, res, next) => {
     // Vérification du token avec la clé secrète qui a servi à le créer
     if (err) {
       console.log("token invalide", err);
-      return res.redirect("/index.html");
+      return res.redirect("/login.html");
     }
-    req.user = decodedToken.user;
+    req.user = decodedToken;
+    console.log("decoded token", decodedToken);
+    console.log("decoded token user", req.user.id);
     next();
   });
 };

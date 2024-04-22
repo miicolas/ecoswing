@@ -1,5 +1,4 @@
 import express from "express";
-import ip from "ip";
 import cors from "cors";
 import router from "./router.js";
 import path from "path";
@@ -10,7 +9,7 @@ const __filename = fileURLToPath(import.meta.url); // Equivalent to __filename i
 const __dirname = path.dirname(__filename); // Equivalent to __dirname in Node.js
 
 const app = express();
-const ipAddr = ip.address();
+
 const port = 3000;
 
 app.use(cors());
@@ -23,5 +22,5 @@ app.use(express.static(path.join(__dirname, "../frontend")));
 app.use(router);
 
 app.listen(port, () => {
-  console.log(`Serveur : http://${ipAddr}:${port}`);
+  console.log(`Serveur : http://localhost:${port}`);
 });

@@ -2,7 +2,7 @@ import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 
 const addGift = async (req, res) => {
-  const userId = req.user;
+  const userId = req.user.id;
   console.log(userId);
 
   try {
@@ -50,7 +50,7 @@ const addGift = async (req, res) => {
     });
     console.log(upadtedLastGift);
 
-    next();
+    res.status(200).redirect("/dashboard");
   } catch (error) {
     console.error("Error adding gift:", error);
     res.status(500).json({ error: "Internal Server Error" });

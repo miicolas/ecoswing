@@ -27,7 +27,7 @@ const signup = async (req, res) => {
       },
     });
 
-    res.status(201).json({ user });
+    res.status(200).redirect("/login.html");
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
@@ -70,7 +70,7 @@ const login = async (req, res) => {
       sameSite: "strict",
     });
 
-    res.status(200).json("User logged in successfully");
+    res.status(200).redirect("/dashboard");
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
@@ -79,7 +79,7 @@ const login = async (req, res) => {
 const logout = async (req, res) => {
   try {
     res.clearCookie("AuthToken");
-    res.status(200).json("User logged out successfully");
+    res.status(200).redirect("/index.html");
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
