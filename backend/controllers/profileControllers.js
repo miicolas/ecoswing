@@ -17,7 +17,8 @@ const getProfile = async (req, res) => {
         lastGift: true,
       },
     });
-    console.log(userProfile);
+    
+
 
     res.status(200).json(
       {
