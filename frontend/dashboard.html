@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/dashboard.css" />
+
   </head>
   <body>
     <header>
@@ -27,7 +29,7 @@
                 <li class="div-wrapper">
                     <div class="btn-primary">Contact</div>
                 </li>
-            
+
         </ul>
       </div>
     </header>
@@ -36,8 +38,7 @@
 
       <div class="profile_container">
 
-      
-  
+
       </div>
     </main>
 
@@ -48,7 +49,7 @@
           <img src="public/img/logo.png" >
         </div>
       </div>
-      
+
       <ul class="footer-container">
         <li class="footer-title-list">
           Connect
@@ -80,39 +81,6 @@
       </ul>
     </footer>
   </body>
-  <script>
-    fetch("/dashboard/getprofile")
-  .then((response) => {
-    if (!response.ok) {
-      throw new Error("Network response was not ok");
-    }
-    return response.json();
-  })
-  .then((data) => {
-    console.log(data);
-    try {
-      let profile_container = document.querySelector(".profile_container");
-
-      profile_container.innerHTML += `
-            <div>
-                <h1>Dashboard</h1>
-            </div>
-            <h3>
-                Bienvenue sur votre dashboard EcoSwing, ${data.name} !
-            </h3>
-            <p>Vous avez actuellement ${data.gift} points</p>
-            <p>Prochain tirage dans ${data.lastGift}</p>
-            <a href="/gift/addgift">Tirer votre point</a>
-            <div> Vous pouvez obtenir des réductions à partir de 20 points</div>
-        `;
-    } catch (error) {
-      console.error('Error displaying profile:', error);
-    }
-  })
-  .catch((error) => {
-    console.error('Error fetching profile:', error);
-  });
-
-  </script> 
+  <script src="api/getProfile.js"></script>
   <script src="js/script.js"></script>
 </html>

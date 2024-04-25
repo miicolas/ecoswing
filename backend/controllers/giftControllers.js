@@ -32,11 +32,7 @@ const addGift = async (req, res) => {
       where: {
         id: userId, // Utiliser l'ID converti en entier
       },
-      data: {
-        gift: {
-          increment: 1,
-        },
-      },
+      data: {},
     });
     console.log(updatedtGift);
 
@@ -46,6 +42,9 @@ const addGift = async (req, res) => {
       },
       data: {
         lastGift: new Date(),
+        gift: {
+          increment: 1,
+        },
       },
     });
     console.log(upadtedLastGift);
