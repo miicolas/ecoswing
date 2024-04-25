@@ -146,3 +146,218 @@ main {
   justify-content: center;
   flex-wrap: wrap;
 }
+.crew-member {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.crew-member .Aurelien {
+  display: flex;
+  width: 25rem;
+  padding: 3rem 2rem 2rem 2rem;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.crew-member .Aurelien {
+  border-radius: 0.6rem;
+  background: #fff;
+  box-shadow:
+    0px 0px 1px 0px rgba(0, 0, 0, 0.08),
+    0px 8px 16px 1px rgba(0, 0, 0, 0.08);
+}
+
+.crew-member .Vivi {
+  display: flex;
+  width: 25rem;
+  padding: 3rem 2rem 2rem 2rem;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.crew-member .Vivi {
+  border-radius: 0.6rem;
+  background: #fff;
+  box-shadow:
+    0px 0px 1px 0px rgba(0, 0, 0, 0.08),
+    0px 8px 16px 1px rgba(0, 0, 0, 0.08);
+}
+
+.crew-member .Nicod {
+  display: flex;
+  width: 25rem;
+  padding: 3rem 2rem 2rem 2rem;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.crew-member .Nicod {
+  border-radius: 0.6rem;
+  background: #fff;
+  box-shadow:
+    0px 0px 1px 0px rgba(0, 0, 0, 0.08),
+    0px 8px 16px 1px rgba(0, 0, 0, 0.08);
+}
+
+.crew-member .Deb {
+  display: flex;
+  width: 25rem;
+  padding: 3rem 2rem 2rem 2rem;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.crew-member .Deb {
+  border-radius: 0.6rem;
+  background: #fff;
+  box-shadow:
+    0px 0px 1px 0px rgba(0, 0, 0, 0.08),
+    0px 8px 16px 1px rgba(0, 0, 0, 0.08);
+}
+
+.crew-member .Max {
+  display: flex;
+  width: 25rem;
+  padding: 3rem 2rem 2rem 2rem;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.crew-member .Max {
+  border-radius: 0.6rem;
+  background: #fff;
+  box-shadow:
+    0px 0px 1px 0px rgba(0, 0, 0, 0.08),
+    0px 8px 16px 1px rgba(0, 0, 0, 0.08);
+}
+
+.crew-member .NicoB {
+  display: flex;
+  width: 25rem;
+  padding: 3rem 2rem 2rem 2rem;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.crew-member .NicoB {
+  border-radius: 0.6rem;
+  background: #fff;
+  box-shadow:
+    0px 0px 1px 0px rgba(0, 0, 0, 0.08),
+    0px 8px 16px 1px rgba(0, 0, 0, 0.08);
+}
+
+.crew-member .Ethan {
+  display: flex;
+  width: 25rem;
+  padding: 3rem 2rem 2rem 2rem;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.crew-member .Ethan {
+  border-radius: 0.6rem;
+  background: #fff;
+  box-shadow:
+    0px 0px 1px 0px rgba(0, 0, 0, 0.08),
+    0px 8px 16px 1px rgba(0, 0, 0, 0.08);
+}
+.crew-member .Ary {
+  display: flex;
+  width: 25rem;
+  padding: 3rem 2rem 2rem 2rem;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.crew-member .Ary {
+  border-radius: 0.6rem;
+  background: #fff;
+  box-shadow:
+    0px 0px 1px 0px rgba(0, 0, 0, 0.08),
+    0px 8px 16px 1px rgba(0, 0, 0, 0.08);
+}
+.crew-member .Stacy {
+  display: flex;
+  width: 25rem;
+  padding: 3rem 2rem 2rem 2rem;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.crew-member .Stacy {
+  border-radius: 0.6rem;
+  background: #fff;
+  box-shadow:
+    0px 0px 1px 0px rgba(0, 0, 0, 0.08),
+    0px 8px 16px 1px rgba(0, 0, 0, 0.08);
+}
+.crew-member .Neylia {
+  display: flex;
+  width: 25rem;
+  padding: 3rem 2rem 2rem 2rem;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.crew-member .Neylia {
+  border-radius: 0.6rem;
+  background: #fff;
+  box-shadow:
+    0px 0px 1px 0px rgba(0, 0, 0, 0.08),
+    0px 8px 16px 1px rgba(0, 0, 0, 0.08);
+}
+
+.crew-member h3 {
+  display: flex;
+  width: 4rem;
+  height: 0.8rem;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.crew-member h3 {
+  color: #2f2f30;
+  font-family: Inter;
+  font-size: 0.6rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1rem;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
+.crew-member h5 {
+  display: flex;
+  width: 6rem;
+  height: 1.8rem;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.crew-member h5 {
+  color: #2f2f30;
+  font-family: Inter;
+  font-size: 0.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1rem;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
