@@ -361,3 +361,22 @@ main {
   letter-spacing: 0.05rem;
   text-transform: uppercase;
 }
+footer {
+  background-color: #000000;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  font-size: 14px;
+}
+
+.footer-content p {
+  margin-bottom: 10px;
+}
+
+.footer-content a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 10px;
+}
