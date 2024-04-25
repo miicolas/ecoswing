@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
 * {
     margin: 0;
@@ -18,7 +17,6 @@ body {
     overflow-x: hidden;
 }
 
-
 .btn-primary {
     display: flex;
     justify-content: center;
@@ -28,7 +26,6 @@ body {
     border-radius: 0.625rem;
 }
 
-
 footer {
     display: flex;
     justify-content: space-around;
@@ -37,6 +34,12 @@ footer {
     color: #fff;
     padding: 5rem;
     width: 100%;
+    margin-top: 5rem;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
 }
 
 .footer-container {
@@ -44,8 +47,6 @@ footer {
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
-    
-    
 }
 
 .footer-container li {
@@ -66,22 +67,22 @@ footer {
     flex-direction: column;
     justify-content: center;
     flex-shrink: 0;
-  }
-  .footer-title {
+}
+.footer-title {
     color: rgba(255, 255, 255, 0.7);
     font-family: Inter;
     font-size: 1rem;
     font-style: normal;
     font-weight: 200;
     line-height: 1.625rem;
-  }
+}
 
-  .footer-credits {
+.footer-credits {
     display: flex;
     align-items: center;
     gap: 1rem;
-  }
-  .credits img {
+}
+.credits img {
     width: 5rem;
     height: 4rem;
     flex-shrink: 0;
@@ -91,8 +92,7 @@ footer {
     align-items: center;
     margin-right: 1rem;
     justify-content: flex-start;
-  }
-
+}
 
 .list-content {
     gap: 1rem;
@@ -179,4 +179,3 @@ footer {
     text-decoration: none;
     color: #000;
 }
-
