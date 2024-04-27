@@ -1,4 +1,4 @@
-fetch("/dashboard/getprofile")
+fetch("https://apps-pt-api.kas9uk.easypanel.host/dashboard/getprofile")
   .then((response) => {
     if (!response.ok) {
       throw new Error("Network response was not ok");
