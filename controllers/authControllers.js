@@ -27,7 +27,7 @@ const signup = async (req, res) => {
       },
     });
 
-    res.status(200).redirect("/login.html");
+    res.status(200).redirect("http://localhost:5173/login.html");
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
