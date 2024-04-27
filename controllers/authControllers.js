@@ -30,7 +30,7 @@ const signup = async (req, res) => {
       },
     });
 
-    res.status(200).redirect("/login.html");
+    res.status(200).redirect("https://apps-pt-api.kas9uk.easypanel.host/login.html");
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
@@ -73,7 +73,7 @@ const login = async (req, res) => {
       sameSite: "strict",
     });
 
-    res.status(200).redirect("/dashboard");
+    res.status(200).redirect("https://apps-pt-api.kas9uk.easypanel.host/dashboard.html");
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
@@ -82,7 +82,7 @@ const login = async (req, res) => {
 const logout = async (req, res) => {
   try {
     res.clearCookie("AuthToken");
-    res.status(200).redirect("/index.html");
+    res.status(200).redirect("https://apps-pt-api.kas9uk.easypanel.host/index.html");
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
