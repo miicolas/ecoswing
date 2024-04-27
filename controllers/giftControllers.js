@@ -49,7 +49,7 @@ const addGift = async (req, res) => {
     });
     console.log(upadtedLastGift);
 
-    res.status(200).redirect("http://localhost:5173/dashboard");
+    res.status(200).redirect("http://localhost:5173/dashboard.html");
   } catch (error) {
     console.error("Error adding gift:", error);
     res.status(500).json({ error: "Internal Server Error" });
