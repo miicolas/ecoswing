@@ -68,9 +68,10 @@ const login = async (req, res) => {
 
     res.cookie("AuthToken", token, {
       // Crée un cookie avec le token
-      httpOnly: true,
+      httpOnly: false,
       secure: false,
-      sameSite: "strict",
+      sameSite: "None",
+      
     });
 
     res.status(200).redirect("http://localhost:5173/dashboard.html");
