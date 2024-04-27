@@ -1,6 +1,9 @@
 import { PrismaClient } from "@prisma/client";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const prisma = new PrismaClient();
 
@@ -19,7 +22,7 @@ const signup = async (req, res) => {
 
     const hashPassword = await bcrypt.hash(password, 10);
 
-    await prisma.user.create({
+    const user = await prisma.user.create({
       data: {
         email: email,
         name: name,
@@ -27,7 +30,7 @@ const signup = async (req, res) => {
       },
     });
 
-    res.status(200).redirect("http://localhost:5173/login.html");
+    res.status(200).redirect("/login.html");
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
@@ -70,7 +73,7 @@ const login = async (req, res) => {
       sameSite: "strict",
     });
 
-    res.status(200).redirect("http://localhost:5173/dashboard.html");
+    res.status(200).redirect("/dashboard");
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
@@ -79,7 +82,7 @@ const login = async (req, res) => {
 const logout = async (req, res) => {
   try {
     res.clearCookie("AuthToken");
-    res.status(200).redirect("http://localhost:5173/index.html");
+    res.status(200).redirect("/index.html");
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
