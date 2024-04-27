@@ -23,5 +23,11 @@ model User {
   lastGift  DateTime  @default(now()) 
 }
 
+model Game {
+  id        Int   @id @default (autoincrement())
+  score Int @default(0)
+
+}
+
 
 
