@@ -18,13 +18,8 @@ const getProfile = async (req, res) => {
       },
     });
 
-    res.status(200).json(
-      {
-        name: userProfile.name,
-        email: userProfile.email,
-        gift: userProfile.gift,
-        lastGift: userProfile.lastGift,
-      },
+    res.status(200).json({message: "Profile retrieved successfully"}
+      
     );
   } catch (error) {
     res.status(400).json({ error: error.message });
