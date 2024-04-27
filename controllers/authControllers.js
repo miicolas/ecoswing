@@ -57,7 +57,24 @@ const login = async (req, res) => {
       return res.status(401).json({ error: "Invalid email or password" });
     }
 
-    // Si tout est bon, générer un token JWT ou gérer la session de l'utilisateur
+    // // Si tout est bon, générer un token JWT ou gérer la session de l'utilisateur
+    // const token = jwt.sign(
+    //   { id: user.id, email: user.email },
+    //   process.env.JWT_SECRET,
+    //   {
+    //     expiresIn: "1h",
+    //   },
+    // );
+
+    // res.cookie("AuthToken", token, {
+    //   // Crée un cookie avec le token
+    //   httpOnly: false,
+    //   secure: false,
+    //   sameSite: "None",
+
+    // });
+
+    // envoi le token dans le header
     const token = jwt.sign(
       { id: user.id, email: user.email },
       process.env.JWT_SECRET,
@@ -66,13 +83,8 @@ const login = async (req, res) => {
       },
     );
 
-    res.cookie("AuthToken", token, {
-      // Crée un cookie avec le token
-      httpOnly: false,
-      secure: false,
-      sameSite: "None",
-      
-    });
+    res.setHeader("Authorization", token);
+
 
     res.status(200).redirect("http://localhost:5173/dashboard.html");
   } catch (error) {

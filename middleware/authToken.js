@@ -2,9 +2,13 @@
 import jwt from "jsonwebtoken";
 
 const authenticateToken = async (req, res, next) => {
-  const token = req.cookies.AuthToken; // Récupération du token depuis les cookies
+  // const token = req.cookies.AuthToken; // Récupération du token depuis les cookies
 
-  console.log("token", token);
+  //recupere le token depuis le header 
+  
+  const token = req.headers["authorization"];
+
+  console.log("authHeader", token);
 
   if (!token) {
     return res.redirect("http://localhost:5173/login.html"); // Redirection vers la page de connexion si le token est manquant
