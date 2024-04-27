@@ -70,7 +70,7 @@ const login = async (req, res) => {
       sameSite: "strict",
     });
 
-    res.status(200).redirect("/dashboard");
+    res.status(200).redirect("http://localhost:5173/dashboard");
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
@@ -79,7 +79,7 @@ const login = async (req, res) => {
 const logout = async (req, res) => {
   try {
     res.clearCookie("AuthToken");
-    res.status(200).redirect("/index.html");
+    res.status(200).redirect("http://localhost:5173/index.html");
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
