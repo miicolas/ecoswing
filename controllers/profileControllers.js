@@ -17,19 +17,10 @@ const getProfile = async (req, res) => {
         lastGift: true,
       },
     });
-    
 
-
-    res.status(200).json(
-      {
-        name: userProfile.name,
-        email: userProfile.email,
-        gift: userProfile.gift,
-        lastGift: userProfile.lastGift,
-      },
-    );
+    res.status(200).json(userProfile);
   } catch (error) {
-    console.error("Error getting profile:", error);
+    res.status(400).json({ error: error.message });
   }
 };
 
