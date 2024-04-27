@@ -1,13 +1,8 @@
-// authenticateToken middleware
 import jwt from "jsonwebtoken";
 
 const authenticateToken = async (req, res, next) => {
-  // const token = req.cookies.AuthToken; // Récupération du token depuis les cookies
-
-  //recupere le token depuis le header 
-  
-  const token = req.headers.authorization.split(" ")[1]; // Récupération du token depuis le header
-  
+  // Récupération du token depuis l'en-tête "Authorization"
+  const token = req.headers["authorization"]; 
 
   console.log("authHeader", token);
 
