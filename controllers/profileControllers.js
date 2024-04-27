@@ -6,7 +6,7 @@ const getProfile = async (req, res) => {
   console.log(userId);
 
   try {
-    const user = await prisma.user.findFirst({
+     const user = await prisma.user.findFirst({
       where: {
         id: userId,
       },
