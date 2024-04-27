@@ -30,7 +30,7 @@ const signup = async (req, res) => {
       },
     });
 
-    res.status(200).redirect("http://localhost:5173/login.html");
+    res.status(200).redirect("http://192.168.1.166:3000/login.html");
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
@@ -73,7 +73,7 @@ const login = async (req, res) => {
       sameSite: "strict",
     });
 
-    res.status(200).redirect("http://localhost:5173/dashboard.html");
+    res.status(200).redirect("http://192.168.1.166:3000/dashboard.html");
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
@@ -82,7 +82,7 @@ const login = async (req, res) => {
 const logout = async (req, res) => {
   try {
     res.clearCookie("AuthToken");
-    res.status(200).redirect("http://localhost:5173/index.html");
+    res.status(200).redirect("http://192.168.1.166:3000/index.html");
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
