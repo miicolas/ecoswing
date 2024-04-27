@@ -18,7 +18,14 @@ const getProfile = async (req, res) => {
       },
     });
 
-    res.status(200).json(userProfile);
+    res.status(200).json(
+      {
+        name: userProfile.name,
+        email: userProfile.email,
+        gift: userProfile.gift,
+        lastGift: userProfile.lastGift,
+      },
+    );
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
