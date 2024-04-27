@@ -80,13 +80,12 @@ const login = async (req, res) => {
       process.env.JWT_SECRET,
       {
         expiresIn: "1h",
-      },
+      }
     );
-
     res.setHeader("Authorization", token);
 
 
-    res.status(200).redirect("http://localhost:5173/dashboard.html");
+    res.status(200).redirect("http://localhost:5173/dashboard");
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
