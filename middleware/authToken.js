@@ -2,7 +2,7 @@
 import jwt from "jsonwebtoken";
 
 const authenticateToken = async (req, res, next) => {
-  const token = req.cookies.AuthToken; // Récupération du token depuis les cookies
+  const token = req.cookies; // Récupération du token depuis les cookies
 
   console.log("token", token);
 
