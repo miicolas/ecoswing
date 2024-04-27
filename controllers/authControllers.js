@@ -86,7 +86,7 @@ const login = async (req, res) => {
     console.log("token", token);
 
 
-    res.status(200).redirect("http://localhost:5173/dashboard");
+    res.status(200).redirect("http://localhost:5173/dashboard.html");
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
