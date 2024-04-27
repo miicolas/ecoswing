@@ -83,6 +83,7 @@ const login = async (req, res) => {
       }
     );
     res.setHeader("Authorization", token);
+    console.log("token", token);
 
 
     res.status(200).redirect("http://localhost:5173/dashboard");

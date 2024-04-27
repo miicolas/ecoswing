@@ -6,7 +6,7 @@ const authenticateToken = async (req, res, next) => {
 
   //recupere le token depuis le header 
   
-  const token = req.headers["authorization"];
+  const token = req.headers["Authorization"];
 
   console.log("authHeader", token);
 
