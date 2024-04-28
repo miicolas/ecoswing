@@ -36,61 +36,49 @@ const signup = async (req, res) => {
   }
 };
 
-const login = async (req, res) => {
-  const { email, password } = req.body;
-  console.log(email, password);
-  try {
-    const user = await prisma.user.findFirst({
-      where: {
-        email,
-      },
-    });
 
-    if (!user) {
-      return res.status(404).json({ error: "User not found" });
-    }
-
-    const passwordMatch = await bcrypt.compare(password, user.password);
-    console.log(passwordMatch);
-
-    if (!passwordMatch) {
-      return res.status(401).json({ error: "Invalid email or password" });
-    }
-
-    // // Si tout est bon, générer un token JWT ou gérer la session de l'utilisateur
-    // const token = jwt.sign(
-    //   { id: user.id, email: user.email },
-    //   process.env.JWT_SECRET,
-    //   {
-    //     expiresIn: "1h",
-    //   },
-    // );
-
-    // res.cookie("AuthToken", token, {
-    //   // Crée un cookie avec le token
-    //   httpOnly: false,
-    //   secure: false,
-    //   sameSite: "None",
-
-    // });
-
-    // envoi le token dans le header
-    const token = jwt.sign(
-      { id: user.id, email: user.email },
-      process.env.JWT_SECRET,
-      {
-        expiresIn: "1h",
+  const login = async (req, res) => {
+    const { email, password } = req.body;
+  
+    try {
+      const user = await prisma.user.findFirst({
+        where: {
+          email,
+        },
+      });
+  
+      if (!user) {
+        return res.status(404).json({ error: "User not found" });
       }
-    );
-    res.setHeader("Authorization", token);
-    console.log("token", token);
+  
+      const passwordMatch = await bcrypt.compare(password, user.password);
+  
+      if (!passwordMatch) {
+        return res.status(401).json({ error: "Invalid email or password" });
+      }
+  
+      // Création du token JWT
+      const token = jwt.sign(
+        { id: user.id, email: user.email },
+        process.env.JWT_SECRET,
+        {
+          expiresIn: "1h",
+        }
+      );
+  
+      // Envoi du token dans le cookie
+      res.cookie("AuthToken", token, {
+        httpOnly: false,
+        secure: false,
+        sameSite: "None",
+      });
+  
+      res.status(200).redirect("http://localhost:5173/dashboard.html");
+    } catch (error) {
+      res.status(400).json({ error: error.message });
+    }
+  };
 
-
-    res.status(200).redirect("http://localhost:5173/dashboard.html");
-  } catch (error) {
-    res.status(400).json({ error: error.message });
-  }
-};
 
 const logout = async (req, res) => {
   try {

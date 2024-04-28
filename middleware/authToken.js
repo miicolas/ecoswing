@@ -1,31 +1,22 @@
 import jwt from "jsonwebtoken";
 
 const authenticateToken = async (req, res, next) => {
-  // Récupération du token depuis l'en-tête "Authorization"
-  const token = req.headers["authorization"]; 
-
-  console.log("authHeader", token);
+  // Récupération du token depuis le cookie ou le header "Authorization"
+  const token = req.cookies.AuthToken || req.headers["authorization"];
 
   if (!token) {
-    return res.redirect("http://localhost:5173/login.html"); // Redirection vers la page de connexion si le token est manquant
+    return res.status(401).json({ error: "Unauthorized" });
   }
 
-  console.log("checking token");
-
-  // Vérification du token
-  jwt.verify(token, process.env.JWT_SECRET, (err, decodedToken) => {
-    // Vérification du token avec la clé secrète qui a servi à le créer
-    if (err) {
-      console.log("token invalide", err);
-      return res.redirect("http://localhost:5173/login.html");
-    }
-    console.log("token valide");
+  try {
+    // Vérification du token
+    const decodedToken = jwt.verify(token, process.env.JWT_SECRET);
     req.user = decodedToken;
-    console.log("decoded token", decodedToken);
-    console.log("decoded token user", req.user.id);
-
     next();
-  });
+  } catch (error) {
+    console.log("Token invalide", error);
+    return res.status(403).json({ error: "Forbidden" });
+  }
 };
 
 export { authenticateToken };
