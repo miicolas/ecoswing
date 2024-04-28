@@ -82,12 +82,9 @@ const login = async (req, res) => {
         expiresIn: "1h",
       }
     );
-    // cree un token qui peut etre recuperer par une api en ligne 
-    res.cookie("AuthToken", token, {
-      httpOnly: false,
-      secure: false,
-      sameSite: "None",
-    });
+
+
+
     console.log(token);
     res.status(200).redirect("http://localhost:5173/dashboard.html");
   } catch (error) {
