@@ -57,31 +57,20 @@ const login = async (req, res) => {
       return res.status(401).json({ error: "Invalid email or password" });
     }
 
-    // // Si tout est bon, générer un token JWT ou gérer la session de l'utilisateur
-    // const token = jwt.sign(
-    //   { id: user.id, email: user.email },
-    //   process.env.JWT_SECRET,
-    //   {
-    //     expiresIn: "1h",
-    //   },
-    // );
-
-    // res.cookie("AuthToken", token, {
-    //   // Crée un cookie avec le token
-    //   httpOnly: false,
-    //   secure: false,
-    //   sameSite: "None",
-
-    // });
 
     // envoi le token dans le header
-    const token = jwt.sign(
+    jwt.sign(
       { id: user.id, email: user.email },
       process.env.JWT_SECRET,
       {
-        expiresIn: "1h",
-      }
+        expiresIn: "1800s",
+      },
     );
+
+    // check si le token est bien envoyé dans le header
+    const token = req.headers["authorization"];
+    console.log(token, "token send in header");
+
 
 
 
