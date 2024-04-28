@@ -3,6 +3,8 @@ import jwt from "jsonwebtoken";
 const authenticateToken = async (req, res, next) => {
   // Récupération du token depuis l'en-tête "Authorization"
   const authHeader = req.headers["authorization"];
+  console.log("authHeader", authHeader);
+
   const token = authHeader && authHeader.split(" ")[1];
 
   console.log("token", token);
