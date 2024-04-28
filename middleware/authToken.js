@@ -4,6 +4,8 @@ const authenticateToken = async (req, res, next) => {
   // Récupération du token depuis le cookie ou le header "Authorization"
   const token = req.cookies.AuthToken || req.headers["authorization"];
 
+  console.log("Token", token);
+
   if (!token) {
     return res.status(401).json({ error: "Unauthorized" });
   }
