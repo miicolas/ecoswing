@@ -6,3 +6,7 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
+function toggleNavbar() {
+  var navbar = document.getElementById("navbar");
+  navbar.classList.toggle("active");
+}
