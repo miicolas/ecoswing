@@ -24,6 +24,7 @@ body {
     padding: 0.5rem 1rem;
     background-color: #ffdf5b;
     border-radius: 0.625rem;
+    cursor: pointer;
 }
 
 footer {
@@ -177,6 +178,7 @@ footer {
 /* Styles pour le burger menu */
 .burger-menu {
     cursor: pointer;
+    display: none;
 }
 
 .burger-menu .bar {
@@ -197,10 +199,12 @@ footer {
         display: flex; /* Afficher le menu principal lorsque le menu burger est activé */
     }
 
-    .navbar {
+    .navbar li {
         display: none;
     }
     .burger-menu {
         display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
