@@ -22,11 +22,11 @@ fetch("https://apps-pt-api.kas9uk.easypanel.host/dashboard/getprofile", {
                 <h1 class="title-green">Dashboard</h1>
             </div>
             <h3 class="welcome-message">
-                Bienvenue sur votre dashboard EcoSwing, <span class="text-green">${data.user.name}</span> !
+                Welcome to your EcoSwing dashboard, <span class="text-green">${data.user.name}</span> !
             </h3>
             <div class="info-point-container">
-                <p class="points-info">Vous avez actuellement ${data.user.gift} ${data.user.gift === 1 ? 'point' : 'points'}</p>
-                <p class="next-draw">Prochain tirage dans ${data.nextGiftTime.hours} heures et ${data.nextGiftTime.minutes} minutes</p>
+                 <p class="points-info">You currently have ${data.user.gift} ${data.user.gift === 1? 'point': 'points'}</p>
+                <p class="next-draw">Next draw in ${data.nextGiftTime.hours} hours and ${data.nextGiftTime.minutes} minutes</p>
             </div>
         `;
 
