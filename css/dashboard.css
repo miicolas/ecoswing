@@ -1,0 +1,62 @@
+.profile_container_main {
+    width: 50rem;
+    height: fit-content;
+    border-radius: 0.625rem;
+    border: 3px solid grey;
+    padding: 2rem;
+    margin: auto;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.welcome-message {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #000;
+}
+
+.info-point-container {
+    display: flex;
+    padding: 1rem 0rem;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.draw-link {
+    padding: 0.5rem 1rem;
+    background-color: #ffdf5b;
+    border-radius: 0.625rem;
+    width: fit-content;
+    margin: auto;
+}
+.logout-link {
+    padding: 0.5rem 1rem;
+    background-color: gray;
+    border-radius: 0.625rem;
+    width: fit-content;
+    margin: 1rem 0 auto auto;
+}
+
+.text-green {
+    display: inline-flex;
+    padding: 0.25rem 0.75rem;
+    border-radius: 6.25rem;
+    background: #79d557;
+    color: #fff;
+}
+
+.discount-info {
+    padding: 0.75rem 0;
+}
+
+.error-message {
+    color: red;
+    font-size: 1rem;
+    font-weight: 800;
+    padding: 1rem 0;
+}
