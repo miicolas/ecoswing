@@ -1,0 +1,382 @@
+main {
+  z-index: 1;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+}
+.project-presentation-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  height: max-content;
+}
+.project-presentation-container ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.project-presentation-container ul li {
+  list-style: none;
+  padding: 1rem;
+}
+
+.project-part-content {
+  height: 40rem;
+  width: 25rem;
+  border-radius: 0.625rem;
+}
+
+.project-part-content img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.625rem;
+}
+
+.project-description {
+  padding: 1rem;
+}
+
+.project-description h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.project-description p {
+  font-size: 1rem;
+  color: gray;
+}
+
+.project-video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  width: 100%;
+  height: max-content;
+}
+
+.project-cta {
+  margin: auto;
+  padding: 2rem;
+  width: 50rem;
+}
+
+.project-cta-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.project-cta-content h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.project-cta-content p {
+  font-size: 1.2rem;
+  color: gray;
+}
+
+.title-green {
+  display: inline-flex;
+  padding: 1rem 2rem;
+  border-radius: 6.25rem;
+  background: #79d557;
+  color: #fff;
+}
+
+.footer-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.Aurelien,
+.Vivi,
+.Nicod,
+.NicoB,
+.Deb,
+.Max,
+.Ethan,
+.Stacy,
+.Ary,
+.Neylia {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  width: 100%;
+}
+.Aurelien img,
+.Vivi img,
+.Nicod img,
+.NicoB img,
+.Deb img,
+.Max img,
+.Ethan img,
+.Stacy img,
+.Ary img,
+.Neylia img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.crew-title h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: "Inter";
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.crew-member {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.crew-member .Aurelien {
+  display: flex;
+  width: 25rem;
+  padding: 3rem 2rem 2rem 2rem;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.crew-member .Aurelien {
+  border-radius: 0.6rem;
+  background: #fff;
+  box-shadow:
+    0px 0px 1px 0px rgba(0, 0, 0, 0.08),
+    0px 8px 16px 1px rgba(0, 0, 0, 0.08);
+}
+
+.crew-member .Vivi {
+  display: flex;
+  width: 25rem;
+  padding: 3rem 2rem 2rem 2rem;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.crew-member .Vivi {
+  border-radius: 0.6rem;
+  background: #fff;
+  box-shadow:
+    0px 0px 1px 0px rgba(0, 0, 0, 0.08),
+    0px 8px 16px 1px rgba(0, 0, 0, 0.08);
+}
+
+.crew-member .Nicod {
+  display: flex;
+  width: 25rem;
+  padding: 3rem 2rem 2rem 2rem;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.crew-member .Nicod {
+  border-radius: 0.6rem;
+  background: #fff;
+  box-shadow:
+    0px 0px 1px 0px rgba(0, 0, 0, 0.08),
+    0px 8px 16px 1px rgba(0, 0, 0, 0.08);
+}
+
+.crew-member .Deb {
+  display: flex;
+  width: 25rem;
+  padding: 3rem 2rem 2rem 2rem;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.crew-member .Deb {
+  border-radius: 0.6rem;
+  background: #fff;
+  box-shadow:
+    0px 0px 1px 0px rgba(0, 0, 0, 0.08),
+    0px 8px 16px 1px rgba(0, 0, 0, 0.08);
+}
+
+.crew-member .Max {
+  display: flex;
+  width: 25rem;
+  padding: 3rem 2rem 2rem 2rem;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.crew-member .Max {
+  border-radius: 0.6rem;
+  background: #fff;
+  box-shadow:
+    0px 0px 1px 0px rgba(0, 0, 0, 0.08),
+    0px 8px 16px 1px rgba(0, 0, 0, 0.08);
+}
+
+.crew-member .NicoB {
+  display: flex;
+  width: 25rem;
+  padding: 3rem 2rem 2rem 2rem;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.crew-member .NicoB {
+  border-radius: 0.6rem;
+  background: #fff;
+  box-shadow:
+    0px 0px 1px 0px rgba(0, 0, 0, 0.08),
+    0px 8px 16px 1px rgba(0, 0, 0, 0.08);
+}
+
+.crew-member .Ethan {
+  display: flex;
+  width: 25rem;
+  padding: 3rem 2rem 2rem 2rem;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.crew-member .Ethan {
+  border-radius: 0.6rem;
+  background: #fff;
+  box-shadow:
+    0px 0px 1px 0px rgba(0, 0, 0, 0.08),
+    0px 8px 16px 1px rgba(0, 0, 0, 0.08);
+}
+.crew-member .Ary {
+  display: flex;
+  width: 25rem;
+  padding: 3rem 2rem 2rem 2rem;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.crew-member .Ary {
+  border-radius: 0.6rem;
+  background: #fff;
+  box-shadow:
+    0px 0px 1px 0px rgba(0, 0, 0, 0.08),
+    0px 8px 16px 1px rgba(0, 0, 0, 0.08);
+}
+.crew-member .Stacy {
+  display: flex;
+  width: 25rem;
+  padding: 3rem 2rem 2rem 2rem;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.crew-member .Stacy {
+  border-radius: 0.6rem;
+  background: #fff;
+  box-shadow:
+    0px 0px 1px 0px rgba(0, 0, 0, 0.08),
+    0px 8px 16px 1px rgba(0, 0, 0, 0.08);
+}
+.crew-member .Neylia {
+  display: flex;
+  width: 25rem;
+  padding: 3rem 2rem 2rem 2rem;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.crew-member .Neylia {
+  border-radius: 0.6rem;
+  background: #fff;
+  box-shadow:
+    0px 0px 1px 0px rgba(0, 0, 0, 0.08),
+    0px 8px 16px 1px rgba(0, 0, 0, 0.08);
+}
+
+.crew-member h3 {
+  display: flex;
+  width: 4rem;
+  height: 0.8rem;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.crew-member h3 {
+  color: #2f2f30;
+  font-family: Inter;
+  font-size: 0.6rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1rem;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
+.crew-member h5 {
+  display: flex;
+  width: 6rem;
+  height: 1.8rem;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.crew-member h5 {
+  color: #2f2f30;
+  font-family: Inter;
+  font-size: 0.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1rem;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
+footer {
+  background-color: #000000;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  font-size: 14px;
+}
+
+.footer-content p {
+  margin-bottom: 10px;
+}
+
+.footer-content a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 10px;
+}

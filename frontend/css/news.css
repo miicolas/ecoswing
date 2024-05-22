@@ -1,0 +1,143 @@
+.news-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  width: 100%;
+}
+
+.news-container-title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.news-container-articles {
+  width: 100%;
+}
+
+.news-container-articles ul {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+
+  flex-wrap: wrap;
+}
+
+.news-container-articles ul li {
+  list-style: none;
+  padding: 1rem;
+}
+
+.news-article {
+  height: 20rem;
+  width: 25rem;
+  border-radius: 0.625rem;
+  border: 1px solid gray;
+  padding: 1rem;
+  border-radius: 0.625rem;
+  background: #fff;
+  box-shadow:
+    0px 0px 1px 0px rgba(0, 0, 0, 0.08),
+    0px 8px 16px 1px rgba(0, 0, 0, 0.08);
+}
+
+.readmore {
+  width: fit-content;
+}
+
+.newsletters-container-title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.newsletters-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 4rem;
+}
+
+.newsletters-container-form form {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.newsletters-container-form form input {
+  padding: 0.5rem;
+  border-radius: 0.625rem;
+  border: 1px solid #000;
+}
+
+.news-content-title {
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.news-content-description {
+  font-size: 1.25rem;
+  padding: 1rem 0;
+  color: gray;
+}
+.news-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+  width: 25rem;
+  border-radius: 0.625rem;
+  border: 1px solid gray;
+  padding: 1rem;
+  background: #fff;
+  box-shadow:
+    0px 0px 1px 0px rgba(0, 0, 0, 0.08),
+    0px 8px 16px 1px rgba(0, 0, 0, 0.08);
+}
+.newsletters-container-form form {
+  display: flex;
+  align-items: center;
+}
+
+.newsletters-container-form input[type="email"] {
+  padding: 0.625rem;
+  border: 0.125rem solid #000000;
+  border-radius: 0.3125rem;
+  margin-right: 0.625rem;
+}
+
+.newsletters-container-form .btn-primary {
+  padding: 0.625rem 1.25rem;
+  background-color: #ffdf5b;
+  color: #fff;
+  border: none;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+}
+
+.newsletters-container-form .btn-primary:hover {
+  background-color: #0056b3;
+}
+footer {
+  background-color: #000000;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  font-size: 14px;
+}
+
+.footer-content p {
+  margin-bottom: 10px;
+}
+
+.footer-content a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 10px;
+}
