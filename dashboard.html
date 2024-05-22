@@ -1,67 +1,105 @@
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="css/global.css" />
-    <link rel="stylesheet" href="css/accueil.css" />
-    <link rel="stylesheet" href="css/dashboard.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/dashboard.css" />
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="css/global.css" />
+        <link rel="stylesheet" href="css/accueil.css" />
+        <link rel="stylesheet" href="css/dashboard.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/dashboard.css" />
+    </head>
+    <body>
+        <header>
+            <div class="navbar_container">
+                <div class="navbar-logo">
+                    <img class="logo" src="/img/logo.png" />
+                    <div class="text-wrapper">EcoSwing</div>
+                </div>
+                <div class="burger-menu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div class="close-icon" id="closeIcon">&times;</div>
+                <ul class="navbar_responsive">
+                    <li>
+                        <a href="index.html" class="text-wrapper-2">Home</a>
+                    </li>
+                    <li>
+                        <a href="project.html" class="text-wrapper-3"
+                            >Project</a
+                        >
+                    </li>
+                    <li><a href="news.html" class="text-wrapper-3">News</a></li>
+                    <li>
+                        <a
+                            href="https://apps-pt-api.kas9uk.easypanel.host/dashboard"
+                            class="text-wrapper-4"
+                            >Dashboard</a
+                        >
+                    </li>
+                    <li class="div-wrapper">
+                        <div class="btn-primary">Contact</div>
+                    </li>
+                </ul>
+                <div class="background_responsive"></div>
+                <ul class="navbar">
+                    <li>
+                        <a href="index.html" class="text-wrapper-2">Home</a>
+                    </li>
+                    <li>
+                        <a href="project.html" class="text-wrapper-3"
+                            >Project</a
+                        >
+                    </li>
+                    <li><a href="news.html" class="text-wrapper-3">News</a></li>
+                    <li>
+                        <a
+                            href="https://apps-pt-api.kas9uk.easypanel.host/dashboard"
+                            class="text-wrapper-4"
+                            >Dashboard</a
+                        >
+                    </li>
+                    <li class="div-wrapper">
+                        <div class="btn-primary">Contact</div>
+                    </li>
+                </ul>
+            </div>
+        </header>
 
-  </head>
-  <body>
-    <header>
-      <div class="navbar_container">
-        <div class="navbar-logo">
-          <img class="logo" src="/img/logo.png" />
-          <div class="text-wrapper">EcoSwing</div>
-        </div>
-        <ul class="navbar">
-            <ul class="navbar">
-                <a href="index.html"><li class="text-wrapper-3">Home</li></a>
-                <a href="project.html"><li class="text-wrapper-3">Project</li></a>
-                <a href="news.html"><li class="text-wrapper-3">News</li></a>
-                <a href="https://apps-pt-api.kas9uk.easypanel.host/dashboard"><li class="text-wrapper-2">Dashboard</li></a>
-                <li class="div-wrapper">
-                    <div class="btn-primary">Contact</div>
-                </li>
+        <main>
+            <div class="profile_container_main">
+                <div class="profile_container"></div>
+                <button class="draw-link">Draw your point</button>
+                <div class="error-container"></div>
+                <div class="discount-info">
+                    You can get discounts starting from 20 points
+                </div>
 
-        </ul>
-      </div>
-    </header>
+                <button class="logout-link">Logout</button>
+            </div>
+        </main>
 
-    <main>
-      <div class="profile_container_main">
-        <div class="profile_container">
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2024 EcoSwing. All Rights Reserved.</p>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </footer>
+    </body>
 
-        </div>
-        <button class="draw-link">Draw your point</button>
-        <div class="error-container">
+    <script src="api/getProfile.js"></script>
+    <script src="api/logout.js" defer></script>
+    <script src="api/draw.js" defer></script>
 
-        </div>
-        <div class="discount-info">You can get discounts starting from 20 points</div>
-
-        <button class="logout-link">Logout</button>
-      </div>
-    </main>
-
-    <footer>
-      <div class="footer-content">
-          <p>&copy; 2024 EcoSwing. All Rights Reserved.</p>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
-      </div>
-  </footer>
-  </body>
-
-  <script src="api/getProfile.js"></script>
-  <script src="api/logout.js" defer></script>
-  <script src="api/draw.js" defer></script>
-
-  <script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </html>
